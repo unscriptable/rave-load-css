@@ -1,0 +1,27 @@
+{
+  "name": "rave-load-css",
+  "version": "0.0.1",
+  "description": "Adds css stylesheet loading to RaveJS based on file extensions.",
+  "main": "rave.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:unscriptable/rave-load-css.git"
+  },
+  "keywords": [
+    "rave",
+    "rave-extension",
+    "css",
+    "loader",
+    "es6",
+    "module"
+  ],
+  "author": "unscriptable <john@unscriptable.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unscriptable/rave-load-css/issues"
+  },
+  "homepage": "https://github.com/unscriptable/rave-load-css"
+}

@@ -1,6 +1,6 @@
 {
   "name": "rave-load-css",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Adds css stylesheet loading to RaveJS based on file extensions.",
   "main": "rave.js",
   "scripts": {

@@ -1,8 +1,8 @@
 {
   "name": "rave-load-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
-    "unscriptable <john@unscriptable.com>"
+	  "John Hann (http://unscriptable.com)"
   ],
   "description": "Adds css stylesheet loading to RaveJS based on file extensions.",
   "main": "rave.js",

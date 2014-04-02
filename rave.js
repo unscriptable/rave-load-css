@@ -16,7 +16,11 @@ var defaultExtensions = [ 'css' ];
 // TODO: allow relative images and fonts to be inlined
 // TODO: debug mode that shows original file names
 
-module.exports = function (context) {
+exports.create = create;
+exports.translate = translate;
+exports.instantiate = instantiate;
+
+function create (context) {
 	var pipeline = {
 		translate: translate,
 		instantiate: instantiate

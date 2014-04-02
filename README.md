@@ -22,3 +22,31 @@ an array of extensions or an object whose keys are file extensions.
 ```js
 context.loadCss = ['less', 'css'];
 ```
+
+## Usage
+
+Importing a css stylsheet is easy.  Just import it as if it were a module.
+
+For CommonJS/node-formatted modules (or AMD-wrapped CommonJS):
+
+```js
+var overrides = require('./override-theme.css');
+overrides.insertRule('p { text-weight: 200; }', overrides.rules.length);
+```
+
+For classic AMD modules:
+
+```js
+define(['./override-theme.css'], function (overrides) {
+	overrides.insertRule('p { text-weight: 200; }', overrides.rules.length);
+});
+```
+
+
+For ES6-formatted modules:
+
+```js
+import overrides from './override-theme.css';
+// ...
+overrides.insertRule('p { text-weight: 200; }', overrides.rules.length);
+```

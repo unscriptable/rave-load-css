@@ -37,14 +37,16 @@ function create (context) {
 		}
 	};
 
-};
+}
 
 function translate (load) {
 	return translateUrls(load.source, function (url) {
+		if (path.isAbsUrl(url)) return url;
+		var dir = path.splitDirAndFile(load.address)[0];
 		// TODO: joinPaths should reduce leading dots
-		return path.isAbsUrl(url)
-			? url
-			: path.joinPaths(load.address, url);
+		return url.charAt(0) === '.'
+			? path.reduceLeadingDots(url, load.address)
+			: path.joinPaths(dir, url);
 	});
 }
 

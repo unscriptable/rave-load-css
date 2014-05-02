@@ -1,32 +1,40 @@
 {
-  "name": "rave-load-css",
-  "version": "0.2.1",
-  "authors": [
-	  "John Hann (http://unscriptable.com)"
-  ],
-  "description": "Adds css stylesheet loading to RaveJS based on file extensions.",
-  "main": "rave.js",
-  "moduleType": [
-    "node"
-  ],
-  "rave": "rave",
-  "keywords": [
-    "rave",
-    "rave-extension",
-    "css",
-    "loader",
-    "es6",
-    "module",
-    "node",
-    "commonjs"
-  ],
-  "license": "MIT",
-  "homepage": "https://github.com/unscriptable/rave-load-css",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+	"name": "rave-load-css",
+	"version": "0.3.0",
+	"description": "Adds css stylesheet loading to RaveJS based on file extensions.",
+	"moduleType": [
+		"node"
+	],
+	"main": "rave.js",
+	"rave": "rave",
+	"keywords": [
+		"rave",
+		"rave-extension",
+		"css",
+		"loader",
+		"es6",
+		"module",
+		"node",
+		"commonjs"
+	],
+	"dependencies": {
+		"rave": "~0.1"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/unscriptable/rave-load-css",
+	"authors": [
+		"John Hann (http://unscriptable.com)",
+		"Brian Cavalier (http://hovercraftstudios.com)"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:unscriptable/rave-load-css.git"
+	},
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }

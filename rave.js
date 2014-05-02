@@ -2,9 +2,6 @@
 /** @author Brian Cavalier */
 /** @author John Hann */
 
-var createFileExtFilter = require('rave/lib/createFileExtFilter');
-var overrideIf = require('rave/lib/overrideIf');
-var fetchAsText = require('rave/pipeline/fetchAsText');
 var translateUrls = require('./translateUrls');
 var path = require('rave/lib/path');
 var stylesheet = require('./stylesheet');
@@ -21,20 +18,21 @@ exports.translate = translate;
 exports.instantiate = instantiate;
 
 function create (context) {
-	var pipeline = {
-		translate: translate,
-		instantiate: instantiate
-	};
-
 	// override extensions if supplied by dev
 	var extensions = 'loadCss' in context
 		? context.loadCss
 		: defaultExtensions;
 
 	return {
-		pipeline: function (loader) {
-			return overrideIf(createFileExtFilter(extensions), loader, pipeline);
-		}
+		load: [
+			{
+				extensions: extensions,
+				hooks: {
+					translate: translate,
+					instantiate: instantiate
+				}
+			}
+		]
 	};
 
 }

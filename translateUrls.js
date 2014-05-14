@@ -4,7 +4,7 @@
 
 module.exports = translateUrls;
 
-// Note: this could fail if there are quotes in the url
+// Note: this could fail if there are quotes inside the url
 var findUrlRx = /url\s*\((['"]?)(.*?)\1\)/g;
 
 /**

@@ -9,10 +9,6 @@ var es5Transform = require('rave/lib/es5Transform');
 
 var defaultExtensions = [ 'css' ];
 
-// TODO: for relative @imports, inline css
-// TODO: allow relative images and fonts to be inlined
-// TODO: debug mode that shows original file names
-
 exports.create = create;
 exports.translate = translate;
 exports.instantiate = instantiate;

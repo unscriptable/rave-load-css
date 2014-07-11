@@ -1,6 +1,6 @@
 {
 	"name": "rave-load-css",
-	"version": "0.4.0",
+	"version": "0.4.1",
 	"description": "Adds css stylesheet loading to RaveJS based on file extensions.",
 	"main": "rave.js",
 	"rave": "rave",
@@ -15,7 +15,7 @@
 		"commonjs"
 	],
 	"peerDependencies": {
-		"rave": "~0.1"
+		"rave": "~0.2"
 	},
 	"license": "MIT",
 	"bugs": {

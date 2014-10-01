@@ -7,20 +7,20 @@ the following file extension:
 
 `css`
 
-You can change this list by adding a `loadCss` property to the context.
-In HTML, this can be done by placing a `data-load-css` attribute on the
-`<html>` element.  The value of this element should be a comma-separated
-list of extensions.
-
-```html
-<html data-load-css="css,less">
-```
-
-When running `rave()` as a module, the `loadCss` property may also be
-an array of extensions or an object whose keys are file extensions.
+You can change this list by adding a `loadCss` rave env property.
+For example, to detect ".less" and ".css-theme"
+extensions, add the following to your app's bower.json or package.json:
 
 ```js
-context.loadCss = ['less', 'css'];
+{
+	"rave": {
+		"env": {
+			"loadJson": {
+				"extensions": [ "less", "css-theme" ]
+			}
+		}
+	}
+}
 ```
 
 ## Usage

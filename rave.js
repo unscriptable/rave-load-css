@@ -15,9 +15,9 @@ exports.instantiate = instantiate;
 
 function create (context) {
 	// override extensions if supplied by dev
-	var extensions = 'loadCss' in context
-		? context.loadCss
-		: defaultExtensions;
+	var env = context.env;
+	var extensions = (env.loadCss && env.loadCss.extensions)
+		|| defaultExtensions;
 
 	context.raveLoadCss = { seen: {} };
 

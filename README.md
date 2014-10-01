@@ -15,7 +15,7 @@ extensions, add the following to your app's bower.json or package.json:
 {
 	"rave": {
 		"env": {
-			"loadJson": {
+			"loadCss": {
 				"extensions": [ "less", "css-theme" ]
 			}
 		}
